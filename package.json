@@ -1,0 +1,35 @@
+{
+  "name": "@thecli/create-project",
+  "version": "1.0.0",
+  "description": "A node cli to automate repetetive activities",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "bin": {
+    "@thecli/create-project": "bin/create-project",
+    "create-project": "bin/create-project"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrickNiyogitare28/the-cli.git"
+  },
+  "keywords": [
+    "cli",
+    "nodejs",
+    "the-cli",
+    "create-project"
+  ],
+  "author": "patrickniyogitare28@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PatrickNiyogitare28/the-cli/issues"
+  },
+  "homepage": "https://github.com/PatrickNiyogitare28/the-cli#readme",
+  "dependencies": {
+    "esm": "^3.2.25"
+  }
+}
