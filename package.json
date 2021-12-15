@@ -30,6 +30,8 @@
   },
   "homepage": "https://github.com/PatrickNiyogitare28/the-cli#readme",
   "dependencies": {
-    "esm": "^3.2.25"
+    "arg": "^5.0.1",
+    "esm": "^3.2.25",
+    "inquirer": "^8.2.0"
   }
 }
