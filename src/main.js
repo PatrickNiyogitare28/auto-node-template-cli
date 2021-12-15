@@ -1,43 +1,43 @@
-import chalk from "chalk";
+import kleur from 'kleur';
 import fs from 'fs';
-import path from "path";
-import ncp from "ncp";
-import { promisify } from "util";
+import ncp from 'ncp';
+import path from 'path';
+import { promisify } from 'util';
 
 const access = promisify(fs.access);
 const copy = promisify(ncp);
 
-async function copyTemplateFiles() {
-  return copy(options.templateDirectory, options.targetDirectory, {
-      clobber: false,
-  });
+async function copyTemplateFiles(options) {
+ return copy(options.templateDirectory, options.targetDirectory, {
+   clobber: false,
+ });
 }
 
-export async function crateProject(options){
-    options = {
-        ...options,
-        targetDirectory: options.targetDirectory || process.cwd(),
-    };
+export async function createProject(options) {
+ options = {
+   ...options,
+   targetDirectory: options.targetDirectory || process.cwd(),
+ };
 
-    const currentFileUrl = import.meta.url;
-    const templateDir =     path.resolve(
-        new URL(currentFileUrl).pathname,
-        '../../templates',
-        options.template.toLowerCase()
-    );
-    options.templateDirectory = templateDir;
+ const currentFileUrl = import.meta.url;
+ const templateDir = path.resolve(
+   new URL(currentFileUrl).pathname,
+   '../../templates',
+   options.template.toLowerCase()
+ );
+ options.templateDirectory = templateDir;
 
-    try{
-        await access(templateDir, fs.constants.R_OK);
-    }
-    catch(err){
-        console.error('%s Invalid template name', chalk.red.bold('ERROR'));
-        process.exit(1);
-    }
+ try {
+   await access(templateDir, fs.constants.R_OK);
+ } catch (err) {
+   console.error('%s Invalid template name', kleur.red().bold('ERROR'));
+   console.log(err)
+   process.exit(1);
+ }
 
-    console.log('Copy project files');
-    await copyTemplateFiles(options);
+ console.log('Copy project files');
+ await copyTemplateFiles(options);
 
-    console.log('%s Project ready', chalk.green.bold('DONE'));
-    return true;   
+ console.log('%s Project ready', kleur.green().bold('DONE'));
+ return true;
 }
