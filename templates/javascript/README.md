@@ -156,8 +156,9 @@ yarn deploy
 
 ## Inspirations
 
- - [KunalKapadia/express-mongoose-es6-rest-api](https://github.com/KunalKapadia/express-mongoose-es6-rest-api)
- - [diegohaz/rest](https://github.com/diegohaz/rest)
+- This boilerplate is insipired by [Express boiler plate](https://github.com/danielfsousa/express-rest-boilerplate) developed and maintained by [Daniel Sousa](https://github.com/danielfsousa)
+
+- Hence this version is licensed by [Daniel Sousa](https://github.com/danielfsousa)
 
 ## License
 
