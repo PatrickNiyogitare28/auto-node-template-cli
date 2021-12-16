@@ -19,16 +19,11 @@ export async function createProject(options) {
    targetDirectory: options.targetDirectory || process.cwd(),
  };
 
- const currentFileUrl = import.meta.url;
- const templateDir = path.resolve(
-   new URL(currentFileUrl).pathname,
-   '../../templates',
-   options.template.toLowerCase()
- );
- options.templateDirectory = templateDir;
+const templateDirUrl =  `${path.dirname(path.resolve(__dirname))}\\templates`
+options.templateDirectory = `${templateDirUrl}\\${options.template.toLowerCase()}`;
 
  try {
-   await access(templateDir, fs.constants.R_OK);
+   await access(templateDirUrl, fs.constants.R_OK);
  } catch (err) {
    console.error('%s Invalid template name', kleur.red().bold('ERROR'));
    console.log(err)
