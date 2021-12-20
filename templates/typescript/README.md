@@ -199,33 +199,35 @@ docker-compose up -d
 
 ### Home / Landing Page
 
-![Home / Landing Page](/screens/Home.png)
+<img src="https://github.com/PatrickNiyogitare28/the-cli/blob/master/templates/typescript/screens/Home.png" alt="Home page">
 > Note: This page has sub-sections, like about-us, contact-us & portfolio
 
 ### LogIn Page
 
-![LogIn Page](/screens/Login.png)
+<img src="https://github.com/PatrickNiyogitare28/the-cli/blob/master/templates/typescript/screens/Home.png" alt="login page">
 > Note: LogIn with Providers
 
 ### SignUp Page
 
-![SignUp Page](/screens/SignUp.png)
+<img src="https://github.com/PatrickNiyogitare28/the-cli/blob/master/templates/typescript/screens/SignUp.png" alt="signUp page">
 > Note: SignUp with Providers
 
 ### Dashboard Page
 
-![Dashboard Page](/screens/Dashboard.png)
+<img src="https://github.com/PatrickNiyogitare28/the-cli/blob/master/templates/typescript/screens/Dashboard.png" alt="Dashboard">
 
 ### With Dropdown Menu
 
-![Dashboard Page with Dropdown Menu](/screens/DashboardWithDropdown.png)
+<img src="https://github.com/PatrickNiyogitare28/the-cli/blob/master/templates/typescript/screens/DashboardWithDropdown.png" alt="dashboard with dropdown">
 
 ### Page Not Found Page
-
-![Page Not Found Page](/screens/PageNotFound.png)
+<img src="https://github.com/PatrickNiyogitare28/the-cli/blob/master/templates/typescript/screens/PageNotFound.png" alt="Page not found" >
 > Note: In case the requested URI does not exist, app shows this page
 
 ### Under Maintenance Page
 
-![Under Maintenance Page](/screens/UnderMaintenance.png)
+<img src="https://github.com/PatrickNiyogitare28/the-cli/blob/master/templates/typescript/screens/UnderMaintenance.png" alt="under maintenance page">
 > Note: In case an error is generated, so instead of plain errors we can show the under maintenance page.
+
+### LICENSE
+This template is inspired [GeekyAnts/express-typescript](https://github.com/GeekyAnts/express-typescript) and maintained by  [GeekyAnts](https://github.com/GeekyAnts)
